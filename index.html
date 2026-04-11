@@ -2,47 +2,148 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula-01</title>
+    <title>Minha Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Está é minha primeira pagina html</h1>
-    <h2>esse é meu segundo titulo</h2>
-    <h3>esse é o meu terceiro titulo</h3>
-    <p>Hello world</p>
-    <p>esse é o
-        <br>
-        <br>
-         meu quarto
-         <br>
-         <br>
-         paragráfo</p>
-         <hr>
-         <p>Este comando sera para representar os sinais de &lt; e &gt; </p>
-         <p>Hoje eu ganhei nada mais que &euro; 10.000</p>
-         <hr>
-         <p>produzido por Victor Capisch &reg; &copy;</p>
 
-         <hr>
-         <h2>Emojis</h2>
-          &#x1F525;
-          <hr>
+<header>
+    <h1>Minha Landing Page</h1>
+</header>
 
-          <h1>Desafio dos filmes</h1>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#curriculo">Currículo</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+    <a href="#github">GitHub</a>
+</nav>
 
-          <p>1- &#x1F319; &#x1F6B2; &#x1F449; &#x1F448; &#x1F47D; - ET - O extraterrestre</p>
-          <br>
-          <p>2- &#x1F475; &#x1F48D; &#x1F48D; &#x1F48D; - Senhor dos anéis</p>
-          <br>
-          <p>3- &#x1F30D; &#x1F412; &#x1F435; &#x1F648; - planeta dos macacos</p>
-          <br>
-          <p>4- &#x1F608; &#x1F460; &#x1F45C; &#x1F457; - O diabo veste prada</p>
-          <br>
-          <p>5- &#x1F9D4; &#x1F449; &#x1F37A; &#x274C; &#x1F470; - Se beber não case</p>
-          <hr>
+<section id="home" class="container">
+    <h2>Sobre mim</h2>
 
+    <img src="Captura de tela 2026-04-10 212146.png">
 
-        
-         
+    <p>Meu nome é Victor Capisch Borges, estudo ciencia da computação da UVV e planejo trabalhar com desenvolvimento web.</p>
+
+    <h3>Habilidades</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Lógica de programação</li>
+    </ul>
+
+    <h3>Vida acadêmica</h3>
+    <p>Ensino médio completo no UP e cursando ciencia da computação.</p>
+    <h3>Matérias da faculdade</h3>
+<ul>
+    <li>Banco de Dados - estudo de tabelas e SQL</li>
+    <li>Programação Web - criação de sites com HTML e CSS</li>
+    <li>Lógica de Programação - resolução de problemas</li>
+    <li>UX Design - estudo da experiência do usuário, focando em criar interfaces simples, intuitivas e agradáveis</li>
+    <li>Fundamentos da Computação - conceitos básicos de como o computador funciona, incluindo hardware, software e sistemas</li>
+</ul>
+
+    <h3>Hobbies</h3>
+    <p>jogos, ler e assistir séries e filmes.</p>
+</section>
+
+<section id="curriculo" class="container">
+    <h2>Currículo</h2>
+
+    <p>Sem experiencia com o mercado de trabalho e buscando minha primeira oportunidade na área.</p>
+
+    <h3>Objetivo</h3>
+    <p>Trabalhar com criação de sites.</p>
+</section>
+
+<section id="github" class="container">
+    <h2>Meu GitHub</h2>
+
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="100">
+
+    <p>Aqui você pode ver meus projetos e minha evolução na programação:</p>
+
+    <a href="https://github.com/viic02" target="_blank">
+        Acessar meu GitHub
+    </a>
+</section>
+
+<section id="servicos" class="container">
+    <h2>Serviços</h2>
+
+    <h3>Tipos de site</h3>
+    <ul>
+        <li>Escolas</li>
+        <li>rede social</li>
+        <li>Loja</li>
+    </ul>
+
+    <h3>Preços</h3>
+
+    <table>
+        <tr>
+            <th>Tipo</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>1 a 2 páginas</td>
+            <td>R$ 200</td>
+        </tr>
+        <tr>
+            <td>3 a 5 páginas</td>
+            <td>R$ 500</td>
+        </tr>
+        <tr>
+            <td>Mais de 5 páginas</td>
+            <td>R$ 850</td>
+        </tr>
+    </table>
+
+    <p>Site dinâmico: R$ 1200</p>
+    <p>Site avançado: R$ 2500</p>
+</section>
+
+<section id="contato" class="container">
+    <h2>Contato</h2>
+
+    <form>
+        <label>Nome:</label><br>
+        <input type="text"><br><br>
+
+        <label>Telefone:</label><br>
+        <input type="tel"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email"><br><br>
+
+        <label>Tipo:</label><br>
+        <select>
+            <option>Pessoa Física</option>
+            <option>Pessoa Jurídica</option>
+        </select><br><br>
+
+        <label>Horário:</label><br>
+        <input type="radio" name="hora"> Manhã
+        <input type="radio" name="hora"> Tarde
+        <input type="radio" name="hora"> Noite
+        <br><br>
+
+        <label>Serviço:</label><br>
+        <input type="checkbox"> Site simples
+        <input type="checkbox"> Site dinâmico
+        <br><br>
+
+        <label>Descrição:</label><br>
+        <textarea></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 - Minha Landing Page</p>
+</footer>
+
 </body>
 </html>
